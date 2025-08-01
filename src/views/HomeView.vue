@@ -7,24 +7,18 @@
 
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-         Petshow
+          Bem-vindo ao PetShow
         </h1>
-
         <p class="subheading font-weight-regular">
-          Faça Login ou Cadastre-se
-          <br>Esqueceu a senha clique aqui
-          <a
-            href="https://community.vuetifyjs.com"
-            target="_blank"
-          >Esqueci a senha</a>
+          Sistema de gerenciamento de animais e veterinários
         </p>
       </v-col>
-
-      
-      
-
-      
     </v-row>
   </v-container>
 </template>
 
+<script>
+export default {
+  name: 'Home',
+}
+</script>
