@@ -1,6 +1,7 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <!-- Barra de navegação -->
+    <v-app-bar app color="teal lighten-2" dark>
       <v-toolbar-title>PetShow</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-btn text :to="{ name: 'Home' }" exact>Início</v-btn>
@@ -9,13 +10,15 @@
       <v-btn text :to="{ name: 'VeterinarianList' }">Veterinários</v-btn>
     </v-app-bar>
 
+    <!-- Conteúdo principal -->
     <v-main>
       <v-container fluid>
         <router-view></router-view>
       </v-container>
     </v-main>
 
-    <v-footer color="primary" app>
+    <!-- Rodapé -->
+    <v-footer color="teal lighten-2" dark app>
       <span class="white--text">&copy; 2025 PetShow</span>
     </v-footer>
   </v-app>

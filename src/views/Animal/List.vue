@@ -43,7 +43,7 @@ export default {
         { text: 'Ações', value: 'actions', sortable: false },
       ],
       animals: [
-        // Exemplo de dados - substituir por chamada à API
+        
         { id: 1, name: 'Rex', species: 'Cachorro', breed: 'Labrador', age: 3 },
         { id: 2, name: 'Mimi', species: 'Gato', breed: 'Siamês', age: 2 },
       ]
@@ -54,7 +54,7 @@ export default {
       this.$router.push({ name: 'AnimalEdit', params: { id } })
     },
     deleteAnimal(id) {
-      // Implementar lógica de exclusão
+      
       console.log('Excluir animal', id)
     }
   }

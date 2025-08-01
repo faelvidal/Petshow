@@ -44,18 +44,18 @@ export default {
       ],
       veterinarians: [
         // Exemplo de dados - substituir por chamada à API
-        { id: 1, name: 'Dr. Silva', crmv: 'SP-12345', specialty: 'Clínico Geral', phone: '(11) 9999-8888' },
-        { id: 2, name: 'Dra. Santos', crmv: 'SP-54321', specialty: 'Cirurgia', phone: '(11) 9777-6666' },
+        { id: 1, name: 'Dr. Silva', crmv: 'SP-12345', specialty: 'Clínico Geral', phone: '(32) 9999-8888' },
+        { id: 2, name: 'Dra. Santos', crmv: 'SP-54321', specialty: 'Cirurgia', phone: '(32) 9777-6666' },
       ]
     }
   },
   methods: {
     editVeterinarian(id) {
-      // Implementar edição
+     
       console.log('Editar veterinário', id)
     },
     deleteVeterinarian(id) {
-      // Implementar exclusão
+      
       console.log('Excluir veterinário', id)
     }
   }

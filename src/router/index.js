@@ -9,12 +9,12 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: loadView('Home')
+    component: loadView('HomeView')
   },
   {
     path: '/about',
     name: 'About',
-    component: loadView('About')
+    component: loadView('AboutView')
   },
   {
     path: '/animals',

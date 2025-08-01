@@ -29,7 +29,7 @@
 <script>
 export default {
   name: 'VeterinarianEdit',
-  props: ['id'], // Recebe o ID da rota
+  props: ['id'], 
   data() {
     return {
       form: {
@@ -40,15 +40,11 @@ export default {
     }
   },
   async created() {
-    // Carrega os dados do veterinário para edição
-    // const vet = await api.getVeterinarian(this.id);
-    // this.form = { ...vet };
-  },
+   },
   methods: {
     async submitForm() {
       try {
-        // Aqui você faria a chamada à API para atualizar o veterinário
-        // await api.updateVeterinarian(this.id, this.form);
+      
         this.$router.push({ name: 'VeterinarianList' });
       } catch (error) {
         console.error('Erro ao atualizar veterinário:', error);

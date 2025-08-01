@@ -12,7 +12,7 @@
               <v-text-field v-model="animal.age" label="Idade" type="number"></v-text-field>
               <v-textarea v-model="animal.notes" label="Observações"></v-textarea>
               
-              <v-btn color="primary" type="submit">Atualizar</v-btn>
+              <v-btn color="teal lighten-2" type="submit">Atualizar</v-btn>
               <v-btn text to="/animals">Cancelar</v-btn>
             </v-form>
           </v-card-text>
@@ -38,14 +38,14 @@ export default {
     }
   },
   created() {
-    // Buscar animal pelo ID e preencher o formulário
+    
     this.fetchAnimal(this.id)
   },
   methods: {
     fetchAnimal(id) {
-      // Implementar busca do animal por ID
+     
       console.log('Buscar animal com ID:', id)
-      // Exemplo com dados mockados
+      
       this.animal = {
         id: id,
         name: 'Rex',
@@ -56,7 +56,7 @@ export default {
       }
     },
     updateAnimal() {
-      // Implementar lógica para atualizar o animal
+     
       console.log('Animal atualizado:', this.animal)
       this.$router.push('/animals')
     }
